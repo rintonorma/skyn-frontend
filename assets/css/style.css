@@ -94,6 +94,9 @@ input,input:focus,button, textarea:focus{
   box-shadow: none!important;
   border-bottom: 1px solid #DC7F9B;
 }
+button{
+  border: none;
+}
 a,
 a:hover,
 a:focus,
@@ -119,6 +122,7 @@ section{
   border: none;
   border-bottom: 1px solid #141721;
   border-radius: 0em;
+  padding: 10px 5px;
 }
 
 .form-control:focus{
@@ -313,6 +317,31 @@ header.scrolled{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 }
 
+#big_hero5{
+  width: 100vw;
+  height: 100vh;
+  background: #3D2645 url('../img/bg-membership.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+#big_hero5 .container{
+  z-index: 1;
+}
+#big_hero5:before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
 .text_overlay{
   position: absolute;
   z-index: 1;
@@ -372,6 +401,22 @@ header.scrolled{
 
 .btn-link-dark:hover{
   background: #DC7F9B;
+  color: #fff;
+}
+
+.btn-link-light{
+  display: inline-block;
+  background: #fff;
+  text-transform: uppercase;
+  padding: 1em;
+  text-decoration: none;
+  font-weight: 600;
+  color: #6C757D;
+  text-align: center;
+}
+
+.btn-link-light:hover{
+  background: #131721;
   color: #fff;
 }
 
@@ -748,6 +793,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   font-weight: 200;
   text-transform: uppercase;
   font-size: 24px;
+}
+
+#membership_section{
+  background: #fff url('../img/bg-membership.png') no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  padding: 10em 0;
 }
 
 #footer{
