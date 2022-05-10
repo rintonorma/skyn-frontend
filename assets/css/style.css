@@ -802,6 +802,159 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   padding: 10em 0;
 }
 
+.memberCard .swiper-slide{
+  width: 90%;
+}
+
+.memberTier{
+  position: absolute;
+  width: 100%;
+  top: 270px;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+}
+
+.memberTier .swiper-slide{
+  width: 10%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.memberTier .swiper-slide-thumb-active{
+  font-weight: 600;
+  color: #212529;
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,1);
+  box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,1);
+  Copy Text
+}
+
+.memberContent{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 5rem;
+  opacity: 1;
+}
+
+#membership_section .swiper-slide-next .memberContent{
+  opacity: 0;
+}
+
+.memberContent ul{
+  list-style: decimal;
+  padding-left: 15px;
+  margin: 0;
+}
+
+.member-card{
+  display: block;
+  position: relative;
+  border-radius: 5px!important;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.regular-member{
+  background: #DC7F9B url('../img/bg-regular-member.png') no-repeat center center;
+  background-size: cover;
+  color: #FEEAFA;
+}
+
+.regular-member:after{
+  content: '';
+  background: url('../img/icons/icon-union.svg') no-repeat center center;
+  width: 250px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.regular-member .badge{
+  color: #FEEAFA;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.silver-member{
+  background: #BFDBF7 url('../img/bg-silver-member.png') no-repeat center center;
+  background-size: cover;
+  color: #546A7B;
+}
+
+.silver-member:after{
+  content: '';
+  background: url('../img/icons/icon-hexagon.svg') no-repeat center center;
+  width: 250px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.silver-member .badge{
+  color: #F5FBFF;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.gold-member{
+  background: #C19552 url('../img/bg-gold-member.png') no-repeat center center;
+  background-size: cover;
+  color: #F9DFA4;
+}
+
+.gold-member:after{
+  content: '';
+  background: url('../img/icons/icon-crown.svg') no-repeat center center;
+  width: 250px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gold-member .badge{
+  color: #F9DFA4;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.platinum-member{
+  background: #E1E5F2 url('../img/bg-platinum-member.png') no-repeat center center;
+  background-size: cover;
+  color: #495057;
+}
+
+.platinum-member:after{
+  content: '';
+  background: url('../img/icons/icon-heart.svg') no-repeat center center;
+  width: 250px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.platinum-member .badge{
+  color: #F5FBFF;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+
 #footer{
   background: #4b2a58 url('../img/bg-footer.png') no-repeat;
   background-size: 100%;
