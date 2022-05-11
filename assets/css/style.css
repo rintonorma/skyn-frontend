@@ -817,8 +817,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 }
 
 .memberTier .swiper-slide{
-  width: 10%;
-  padding: 10px;
+  width: 20%;
+  padding: 15px;
   text-align: center;
   cursor: pointer;
 }
@@ -955,6 +955,37 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   padding: 10px;
 }
 
+.my-voucher{
+  background: #FFFCF2 url('../img/bg-voucher.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 5rem 0;
+  border-radius: 5px;
+}
+
+.myVoucher .swiper-slide{
+  width: 80%;
+}
+
+.myVoucher ion-icon{
+  font-size: 100px;
+}
+
+.my-promo{
+  background: #FFFCF2 url('../img/bg-mypromo.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.myPromo .swiper-slide{
+  width: 80%;
+}
+
+.myPromo ion-icon{
+  font-size: 70px;
+}
+
 #footer{
   background: #4b2a58 url('../img/bg-footer.png') no-repeat;
   background-size: 100%;
@@ -994,6 +1025,22 @@ footer{
 .gototop.scrolled{
   opacity: 1;
   visibility: visible;
+}
+
+.referFriend{
+  background: #3D2645;
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  display: block;
+  z-index: 999;
+}
+
+.referFriend:hover{
+  background: #131721;
+  color: #DC7F9B;
 }
 
 #searchCollapse{
