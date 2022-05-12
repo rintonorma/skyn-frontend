@@ -59,4 +59,33 @@ $(document).ready(function () {
     }
   });
 
+  $('#verification-code').pincodeInput({
+    inputs:6,
+    hideDigits:true,
+    keydown :function(e){},
+    change:function(input,value,inputnumber){},
+    complete :function(value, e, errorElement){}
+  });
+
+  document.querySelector(".confirmPhone").addEventListener('click', function(){
+    Swal.fire({
+        iconHtml: '<img src="assets/img/icons/icon-success-alert.svg" alt="success">',
+        title: 'Congratulations!',
+        text: 'Your Phone Number has been changed!',
+        confirmButtonText: 'OK!',
+        confirmButtonColor: '#141721',
+      })
+  });
+
+  document.querySelector(".confirmPassword").addEventListener('click', function(){
+    Swal.fire({
+        iconHtml: '<img src="assets/img/icons/icon-success-alert.svg" alt="success">',
+        title: 'Congratulations!',
+        text: 'Your password has been changed!',
+        confirmButtonText: 'OK!',
+        confirmButtonColor: '#141721',
+      })
+  });
+
 });
+

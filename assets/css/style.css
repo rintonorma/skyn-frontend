@@ -109,10 +109,19 @@ button:focus {
   outline: none;
   box-shadow: none!important;
 }
+a:hover{
+  color: #DC7F9B;
+}
 section{
   display: block;
   padding: 5rem 0;
   overflow: hidden;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #141721;
+    text-decoration: none;
+    background-color: #ffe6ed;
 }
 
 .form-control{
@@ -140,6 +149,7 @@ section{
 
 .modal-content{
   border-radius: 0;
+  border: none;
 }
 .w-10{
   width: 10%!important;
@@ -156,7 +166,10 @@ header.scrolled{
   color: #43ada2!important;
 }
 .text-info{
-      color: #1b75bb!important;
+  color: #1b75bb!important;
+}
+.text-danger{
+  color: #EF233C!important;
 }
 .z-index-1{
   z-index: 1;
@@ -373,6 +386,20 @@ header.scrolled{
   color: #fff;
 }
 
+.btn-link-pink{
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1em;
+  text-decoration: none;
+  font-weight: 600;
+  color: #DC7F9B;
+}
+
+.btn-link-pink:hover{
+  border: none;
+  color: #141721;
+}
+
 .btn-link-black{
   display: inline-block;
   text-transform: uppercase;
@@ -435,6 +462,23 @@ header.scrolled{
   background: #131721;
   color: #fff;
   border: 1px solid #131721;
+}
+.swal2-popup{
+  border-radius: 0!important;
+}
+.swal2-icon{
+  border: none!important;
+}
+.swal2-title{
+  color: #231F20!important;
+}
+.swal2-html-container{
+  color: #131721!important;
+}
+.swal2-styled.swal2-confirm{
+  border-radius: 0!important;
+  font-size: 20px!important;
+  padding: 1rem 5rem;
 }
 
 #our_treatment{
@@ -712,6 +756,7 @@ header.scrolled{
   background: #fff url('../img/bg-promo.png') no-repeat;
   background-size: 100%;
   background-position: top center;
+  background-position-y: 18px;
   padding: 10em 0;
 }
 
@@ -799,6 +844,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   background: #fff url('../img/bg-membership.png') no-repeat;
   background-size: 100%;
   background-position: top center;
+  background-position-y: -20px;
   padding: 10em 0;
 }
 
@@ -964,7 +1010,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 }
 
 .myVoucher .swiper-slide{
-  width: 80%;
+  width: 70%;
 }
 
 .myVoucher ion-icon{
@@ -979,11 +1025,74 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 }
 
 .myPromo .swiper-slide{
-  width: 80%;
+  width: 70%;
 }
 
 .myPromo ion-icon{
   font-size: 70px;
+}
+
+#my_account{
+  background: #fff url('../img/bg-membership.png') no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  padding: 10em 0;
+}
+
+.avatar{
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn-edit{
+  position: relative;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+.btn-edit a{
+  background: #131721;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.btn-edit a:hover{
+  background: #DC7F9B;
+}
+.list-menu{
+  width: 50%;
+  margin: 2em auto 0;
+}
+.list-menu ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-menu ul li{
+  border-bottom: 1px solid #CED4DA;
+}
+.list-menu ul li:last-child{
+  border: none;
+}
+.list-menu a:hover{
+  color: #DC7F9B;
 }
 
 #footer{
@@ -1082,6 +1191,39 @@ footer{
 }
 .sosmed a ion-icon{
   font-size: 20px;
+}
+
+.modalPoint ul{
+  list-style: none;
+  padding: 0;
+}
+
+.modalPoint ul li{
+  padding: 1rem 0;
+  border-bottom: 1px solid #CED4DA;
+}
+
+.modalBalance ul{
+  list-style: none;
+  padding: 0;
+}
+
+.modalBalance ul li{
+  padding: 1rem 0;
+  border-bottom: 1px solid #CED4DA;
+}
+.pincode-input-container{
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.pincode-input-container input{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 @media (max-width: 767px){
