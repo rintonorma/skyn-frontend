@@ -116,6 +116,7 @@ section{
   display: block;
   padding: 5rem 0;
   overflow: hidden;
+  position: relative;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -249,6 +250,7 @@ header.scrolled{
 }
 
 #big_hero{
+  position: relative;
   width: 100vw;
   height: 100vh;
   background: #fff url('../img/banner/banner-1.png') no-repeat;
@@ -258,6 +260,7 @@ header.scrolled{
   align-items: center;
 }
 #big_hero2{
+  position: relative;
   width: 100vw;
   height: 100vh;
   background: #fff url('../img/banner/banner-2.png') no-repeat;
@@ -289,6 +292,7 @@ header.scrolled{
   background-position: center center;
   display: flex;
   align-items: center;
+  position: relative;
 }
 #big_hero3 .container{
   z-index: 1;
@@ -647,20 +651,59 @@ header.scrolled{
   position: relative;
   height: 100%;
 }
+.ui-best-deals .title-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: block;
+}
+.ui-best-deals .title-right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+.ui-best-deals .img-left{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+}
+.ui-best-deals .img-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
 
 #skyn_section{
   background: #FFF9FE url('../img/bg-skyn.png') no-repeat;
   background-size: 100%;
   background-position: top center;
   background-position-y: -50px;
+  background-blend-mode: multiply;
   position: relative;
   padding-top: 0;
+}
+
+#skyn_section .img-title{
+  position: absolute;
+  right: 50px;
+  top: 0;
 }
 
 #foxy_section{
   background: #FFFFFF url('../img/bg-foxy.png') no-repeat;
   background-size: 100%;
   background-position: bottom center;
+}
+
+#foxy_section .img-title{
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #foxy_section ul{
@@ -722,6 +765,12 @@ header.scrolled{
   background: #fff url('../img/bg-rf.png') no-repeat;
   background-size: 100%;
   background-position: bottom center;
+}
+
+#rf_treatment .img-title{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #slimming_section{
@@ -1232,6 +1281,12 @@ footer{
     h2{
       font-size: 24px;
     }
+    h4{
+      font-size: 18px;
+    }
+    h5,.h5,.fs-5{
+      font-size: 16px!important;
+    }
     p{
       font-size: 12px;
     }
@@ -1291,7 +1346,68 @@ footer{
       padding: 1em;
     }
     #big_hero{
-      height: 60vh;
+      height: 70vh;
+    }
+    #big_hero2{
+      height: 70vh;
+      background-position: center right;
+      background-position-x: -30rem;
+    }
+    #big_hero3{
+      height: 70vh;
+    }
+    .ui-best-deals{
+      height: 500px;
+      margin-bottom: 15px;
+    }
+    .ui-best-deals .title-left, .ui-best-deals .title-right{
+      width: 35%;
+      z-index: 9;
+    }
+    .ui-best-deals .img-left{
+      width: 70%;
+    }
+    .ui-best-deals .img-right{
+      width: 70%;
+    }
+    #skyn_section{
+      background-position-y: 0px;
+      background-size: 270rem;
+    }
+    #skyn_section .img-title{
+      bottom: 0;
+      right: 0;
+      top: inherit;
+      width: 50%;
+    }
+    #foxy_section .img-title{
+      width: 50%;
+    }
+    #rf_treatment{
+      background-size: 100rem;
+    }
+    #rf_treatment .img-title{
+      width: 50%;
+    }
+    #rf_treatment .img-title2{
+      width: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    #rf_treatment .treatment-title{
+      height: auto;
+      padding: 0.5rem;
+    }
+    .pricelist-line{
+      letter-spacing: inherit;
+      margin-bottom: 1rem;
+    }
+    #slimming_section .img-title{
+      width: 50%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
     .card-overlay > img{
       opacity: 0;
