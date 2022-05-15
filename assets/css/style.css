@@ -828,6 +828,13 @@ header.scrolled{
   position: relative;
 }
 
+#new_package .img-title{
+  position: absolute;
+  right: -3rem;
+  top: -3rem;
+  z-index: 1;
+}
+
 #new_package:before{
   content: '';
   position: absolute;
@@ -886,6 +893,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   font-weight: 200;
   text-transform: uppercase;
   font-size: 24px;
+}
+
+#our_menu .img-title{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#our_menu .img-title2{
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 #membership_section{
@@ -1356,6 +1374,9 @@ footer{
     #big_hero3{
       height: 70vh;
     }
+    #big_hero4{
+      height: 70vh;
+    }
     .ui-best-deals{
       height: 500px;
       margin-bottom: 15px;
@@ -1409,6 +1430,16 @@ footer{
       bottom: 0;
       right: 0;
     }
+    #new_package .img-title{
+      width: 50%;
+      top: inherit;
+      bottom: -1rem;
+      right: -1rem;
+    }
+    #new_package .treatment-title{
+      height: auto;
+      padding: 0.5rem;
+    }
     .card-overlay > img{
       opacity: 0;
     }
@@ -1431,6 +1462,30 @@ footer{
     }
     .card-overlay .card-body .btn-link-black{
       display: none;
+    }
+    #our_menu{
+      background-size: cover;
+    }
+    #our_menu .subtitle{
+      font-size: 24px;
+    }
+    #our_menu .title{
+      height: 40px;
+    }
+    #our_menu .img-title{
+      width: 50%;
+    }
+    #our_menu .img-title2{
+      width: 50%;
+    }
+    #our_menu .icon-circle{
+      width: 80%;
+    }
+    #our_menu h3{
+      font-size: 18px;
+    }
+    #our_menu h4{
+      font-size: 14px;
     }
     #about_us .row{
       display: flex;
@@ -1498,6 +1553,21 @@ footer{
       background-position: top center;
       padding: 5em 0;
     }
+    #promotions_section.details-page{
+      padding: 0;
+    }
+    #promotions_section.details-page .container{
+      padding: 0;
+    }
+    #promotions_section .ratio-32x9 {
+        --bs-aspect-ratio: 50%;
+    }
+    .promo_list .w-10{
+      width: 100%!important;
+    }
+    .promo_list .w-10 small{
+      white-space: nowrap;
+    }
     .promo_list .position-absolute img{
       width: 30px;
     }
@@ -1512,6 +1582,81 @@ footer{
     }
     .promo_list .card-body small{
       font-size: 12px;
+    }
+    #membership_section{
+      background-size: 300%;
+      background-position-y: 0;
+      padding: 5em 0;
+    }
+    .memberCard .swiper-slide{
+      width: 100%;
+    }
+    .member-card h3{
+      font-size: 16px;
+    }
+    .member-card .card-body{
+      padding: 0;
+    }
+    .memberTier{
+      top: 13em;
+    }
+    .memberTier .swiper-wrapper{
+      overflow: auto;
+    }
+    .memberTier .swiper-slide{
+      width: auto;
+    }
+    .regular-member .badge{
+      font-size: 12px;
+    }
+    .regular-member:after{
+      background-size: 60%;
+      width: 150px;
+    }
+    .silver-member .badge{
+      font-size: 12px;
+    }
+    .silver-member:after{
+      background-size: 60%;
+      width: 150px;
+    }
+    .gold-member .badge{
+      font-size: 12px;
+    }
+    .gold-member:after{
+      background-size: 60%;
+      width: 150px;
+    }
+    .platinum-member .badge{
+      font-size: 12px;
+    }
+    .platinum-member:after{
+      background-size: 60%;
+      width: 150px;
+    }
+    .my-voucher{
+      padding: 2em 0;
+    }
+    .myVoucher .swiper-wrapper{
+      margin-left: -1em;
+    }
+    .myVoucher .swiper-slide{
+      width: 90%;
+    }
+    .myVoucher ion-icon {
+        font-size: 40px;
+    }
+    #my_voucher .text-end{
+      margin-top: 1em;
+    }
+    .myPromo .swiper-slide{
+      width: 90%;
+    }
+    .myPromo .swiper-wrapper{
+      margin-left: -1em;
+    }
+    .referFriend{
+      display: none;
     }
     .modal-title{
       font-size: 16px;
@@ -1546,6 +1691,7 @@ footer{
     }
     #footer{
       font-size: 14px;
+      background-size: cover;
     }
     footer .row{
       display: flex;

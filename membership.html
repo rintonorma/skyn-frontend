@@ -235,16 +235,12 @@
   <section id="my_voucher">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 order-lg-1">
           <h3 class="mb-2">My Voucher</h3>
           <p class="mb-3">We’ve got a special voucher for you!</p>
         </div>
-        <div class="col-12 col-lg-6 text-end">
-          <a href="./my-voucher.html" title="">
-            <h5 class="d-flex align-items-center justify-content-end gap-2 fw-normal">(3) Redeemed VOUCHER <ion-icon name="chevron-forward-outline"></ion-icon></h5>
-          </a>
-        </div>
-        <div class="col-12">
+        
+        <div class="col-12 order-lg-3">
           <div class="swiper myVoucher">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -279,6 +275,11 @@
               </div><!-- item -->
             </div>
           </div><!-- end swiper -->
+        </div>
+        <div class="col-12 col-lg-6 text-end order-lg-2">
+          <a href="./my-voucher.html" title="">
+            <h5 class="d-flex align-items-center justify-content-end gap-2 fw-normal">(3) Redeemed VOUCHER <ion-icon name="chevron-forward-outline"></ion-icon></h5>
+          </a>
         </div>
       </div>
     </div>
@@ -445,6 +446,20 @@
         slidesPerView: "auto",
         freeMode: true,
         watchSlidesProgress: true,
+        // breakpoints: {
+        //   320: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 20
+        //   },
+        //   480: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 30
+        //   },
+        //   640: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 40
+        //   }
+        // }
       });
       var swiper2 = new Swiper(".memberCard", {
         slidesPerView: "auto",
