@@ -1237,6 +1237,9 @@ footer{
 .searchBtn[aria-expanded="true"]{
   content: url('../img/icons/icon-x.svg');
 }
+.searchBtn{
+  display: none!important;
+}
 
 .sosmed{
   position: relative;
