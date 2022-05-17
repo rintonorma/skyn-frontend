@@ -84,6 +84,11 @@ h2{
   font-size: 48px;
   font-weight: 600;
 }
+h3{
+  font-family: 'Metropolis', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
 h4{
   font-family: 'Metropolis', sans-serif;
   font-size: 24px;
@@ -171,6 +176,9 @@ header.scrolled{
 }
 .text-danger{
   color: #EF233C!important;
+}
+.text-softpink{
+  color: #FFDDD2!important;
 }
 .z-index-1{
   z-index: 1;
@@ -359,6 +367,30 @@ header.scrolled{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 }
 
+#big_hero6{
+  width: 100vw;
+  height: 100vh;
+  background: #fff url(../img/bg-gallery.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+#big_hero6 .container{
+  z-index: 1;
+}
+#big_hero6:before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
 .text_overlay{
   position: absolute;
   z-index: 1;
@@ -578,7 +610,17 @@ header.scrolled{
   margin-left: -1em;
   margin-top: 1em;
 }
+.bg-pat-pink{
+  background: #F7D6E0 url(../img/pat-3.png) no-repeat;
+  background-size: 100%;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+}
 
+.bg-pat-pink img{
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+}
 
 #gallery_sec{
   background: #fff url('../img/bg-gallery.png') no-repeat;
@@ -1198,6 +1240,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
   color: #DC7F9B;
 }
 
+#before_section{
+  background: #fff url('../img/bg-before.png') no-repeat;
+  background-size: 100%;
+  background-position: top center;
+}
+
 #footer{
   background: #4b2a58 url('../img/bg-footer.png') no-repeat;
   background-size: 100%;
@@ -1330,6 +1378,28 @@ footer{
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+}
+
+.myGallery{
+  overflow: visible;
+  margin: 4em 0;
+  display: block;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  background: #131721;
+  padding: 2em;
+  color: #FFFFFF;
+}
+
+.myGallery .swiper-button-next, .myGallery .swiper-rtl .swiper-button-prev {
+    right: -30px;
+    left: auto;
+}
+
+.myGallery .swiper-button-prev, .myGallery .swiper-rtl .swiper-button-next {
+    left: -30px;
+    right: auto;
 }
 
 @media (max-width: 767px){
