@@ -1157,6 +1157,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 .list-menu ul li:last-child{
   border: none;
 }
+.list-menu a{
+  padding: 1.5rem;
+}
 .list-menu a:hover{
   color: #DC7F9B;
 }
@@ -1588,6 +1591,15 @@ footer{
       background-position-y: 0;
       padding: 5em 0;
     }
+    #membership_section.details-page{
+      padding: 0;
+    }
+    #membership_section.details-page .container{
+      padding: 0;
+    }
+    #membership_section .ratio-32x9 {
+        --bs-aspect-ratio: 50%;
+    }
     .memberCard .swiper-slide{
       width: 100%;
     }
@@ -1637,6 +1649,9 @@ footer{
     .my-voucher{
       padding: 2em 0;
     }
+    .my-voucher ion-icon{
+      font-size: 50px!important;
+    }
     .myVoucher .swiper-wrapper{
       margin-left: -1em;
     }
@@ -1649,14 +1664,41 @@ footer{
     #my_voucher .text-end{
       margin-top: 1em;
     }
+    .my-promo{
+      padding: 2rem 0;
+    }
     .myPromo .swiper-slide{
       width: 90%;
     }
     .myPromo .swiper-wrapper{
       margin-left: -1em;
     }
+    .myPromo ion-icon{
+      font-size: 40px;
+    }
     .referFriend{
       display: none;
+    }
+    #my_account{
+      background-size: 300%;
+      padding: 5em 0;
+    }
+    #my_account .w-25{
+      width: 50%!important;
+      padding-right: 1rem!important;
+      padding-left: 1rem!important;
+    }
+    .list-menu{
+      width: 100%;
+    }
+    .list-menu a{
+      padding: 1.5rem 0;
+    }
+    .modalReferral .w-10{
+      width: 100%!important;
+    }
+    .modalReferral .w-10 small{
+      white-space: nowrap;
     }
     .modal-title{
       font-size: 16px;
