@@ -376,7 +376,7 @@
   </div>
 
   <div class="referFriend">
-    <a href="#" title="" class="d-flex align-items-center gap-2">
+    <a href="#" title="" class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#referralModal">
       <img src="assets/img/icons/icon-invite.svg" alt="">
       <div class="d-flex flex-column gap-1 justify-content-center align-items-center">
         <h5>Refer a Friends</h5>
@@ -428,6 +428,71 @@
             <h5>100 Point</h5>
           </div>
           <a href="#" title="" class="btn-link-dark w-100 text-center"><h5>REDEEM</h5></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Referral-->
+  <div class="modalReferral modal fade" id="referralModal" tabindex="-1" aria-labelledby="referralModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="referralModalLabel">Refer a Friends</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4 class="mb-5">Refer your friends and get a balance of IDR 50.000</h4>
+          <div class="d-flex align-items-center mb-5">
+            <div class="d-flex flex-column gap-2 w-50 text-center border-end">
+              <h1>15</h1>
+              <p>REFERRAL TRANSACTION</p>
+            </div>
+            <div class="d-flex flex-column gap-2 w-50 text-center">
+              <h1>50</h1>
+              <p>SHARE REFERRAL</p>
+            </div>
+          </div>
+          <h5 class="mb-3">How to refer a friend</h5>
+          <ul style="list-style: decimal;padding-left: 1em;margin-bottom: 1em;">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+            <li>Scelerisque eu libero aliquam volutpat habitasse tincidunt.  </li>
+            <li>Pellentesque venenatis odio nullam purus. </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-between border-bottom border-top py-4 mb-3">
+            <h5>Referral Code</h5>
+            <div class="d-flex align-items-center gap-2">
+              <a href="#" title="" class="d-flex align-items-center justify-content-center"><ion-icon name="copy-outline" class="fs-5"></ion-icon></a>
+              <h5>GB7N6B8YSPYYF</h5>
+            </div>
+          </div>
+          <h5 class="mb-3">Share</h5>
+          <div class="d-flex gap-2">
+            <a href="#" title="" class="d-flex justify-content-center align-items-center w-10 flex-column gap-1">
+              <img src="assets/img/icons/icon-whatsapp.png" alt="" />
+              <small>Whatsapp</small>
+            </a>
+            <a href="#" title="" class="d-flex justify-content-center align-items-center w-10 flex-column gap-1">
+              <img src="assets/img/icons/icon-facebook.png" alt="" />
+              <small>Facebook</small>
+            </a>
+            <a href="#" title="" class="d-flex justify-content-center align-items-center w-10 flex-column gap-1">
+              <img src="assets/img/icons/icon-telegram.png" alt="" />
+              <small>Telegram</small>
+            </a>
+            <a href="#" title="" class="d-flex justify-content-center align-items-center w-10 flex-column gap-1">
+              <img src="assets/img/icons/icon-sms.png" alt="" />
+              <small>Message</small>
+            </a>
+            <a href="#" title="" class="d-flex justify-content-center align-items-center w-10 flex-column gap-1">
+              <img src="assets/img/icons/icon-email.png" alt="" />
+              <small>Email</small>
+            </a>
+            <a href="#" title="" class="d-flex justify-content-center align-items-center w-10 flex-column gap-1">
+              <img src="assets/img/icons/icon-link.png" alt="" />
+              <small>Copy link</small>
+            </a>
+          </div>
         </div>
       </div>
     </div>

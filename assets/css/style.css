@@ -1795,7 +1795,12 @@ footer{
       font-size: 40px;
     }
     .referFriend{
-      display: none;
+      width: 100%;
+      bottom: 0;
+      top: inherit;
+    }
+    .referFriend a{
+      justify-content: center;
     }
     #my_account{
       background-size: 300%;
@@ -1861,6 +1866,15 @@ footer{
     }
     footer .text-end{
       text-align: center!important;
+    }
+    #before_section{
+      background-size: 300%;
+    }
+    #before_section h3{
+      font-size: 24px;
+    }
+    #before_section .container{
+      overflow: hidden;
     }
 }
 
