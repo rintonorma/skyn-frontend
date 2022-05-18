@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/venobox.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -114,31 +115,51 @@
           <div class="swiper myGallery">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="#" title="">
+                <a title="HOLLYWOOD CHEEK CONTOURING 1" class="my-gallery-links" data-gall="gallery01" href="assets/img/img-gallery.png">
                   <div class="ratio ratio-1x1 bg-pat-pink">
                     <img src="assets/img/img-gallery.png" alt="" class="object-cover" />
                   </div>
+                  <div class="treatment-title fs-6 fw-normal text-center mt-5 p-2">HOLLYWOOD CHEEK CONTOURING 1</div>
                 </a>
               </div><!-- item -->
               <div class="swiper-slide">
-                <a href="#" title="">
+                <a title="HOLLYWOOD CHEEK CONTOURING 2" class="my-gallery-links" data-gall="gallery02" href="assets/img/img-gallery.png">
                   <div class="ratio ratio-1x1 bg-pat-pink">
                     <img src="assets/img/img-gallery.png" alt="" class="object-cover" />
                   </div>
+                  <div class="treatment-title fs-6 fw-normal text-center mt-5 p-2">HOLLYWOOD CHEEK CONTOURING 2</div>
                 </a>
               </div><!-- item -->
               <div class="swiper-slide">
-                <a href="#" title="">
+                <a title="HOLLYWOOD CHEEK CONTOURING 3" class="my-gallery-links" data-gall="gallery03" href="assets/img/img-gallery.png">
                   <div class="ratio ratio-1x1 bg-pat-pink">
                     <img src="assets/img/img-gallery.png" alt="" class="object-cover" />
                   </div>
+                  <div class="treatment-title fs-6 fw-normal text-center mt-5 p-2">HOLLYWOOD CHEEK CONTOURING 3</div>
                 </a>
               </div><!-- item -->
               <div class="swiper-slide">
-                <a href="#" title="">
+                <a title="HOLLYWOOD CHEEK CONTOURING 4" class="my-gallery-links" data-gall="gallery04" href="assets/img/img-gallery.png">
                   <div class="ratio ratio-1x1 bg-pat-pink">
                     <img src="assets/img/img-gallery.png" alt="" class="object-cover" />
                   </div>
+                  <div class="treatment-title fs-6 fw-normal text-center mt-5 p-2">HOLLYWOOD CHEEK CONTOURING 4</div>
+                </a>
+              </div><!-- item -->
+              <div class="swiper-slide">
+                <a title="HOLLYWOOD CHEEK CONTOURING 5" class="my-gallery-links" data-gall="gallery05" href="assets/img/img-gallery.png">
+                  <div class="ratio ratio-1x1 bg-pat-pink">
+                    <img src="assets/img/img-gallery.png" alt="" class="object-cover" />
+                  </div>
+                  <div class="treatment-title fs-6 fw-normal text-center mt-5 p-2">HOLLYWOOD CHEEK CONTOURING 5</div>
+                </a>
+              </div><!-- item -->
+              <div class="swiper-slide">
+                <a title="HOLLYWOOD CHEEK CONTOURING 6" class="my-gallery-links" data-gall="gallery06" href="assets/img/img-gallery.png">
+                  <div class="ratio ratio-1x1 bg-pat-pink">
+                    <img src="assets/img/img-gallery.png" alt="" class="object-cover" />
+                  </div>
+                  <div class="treatment-title fs-6 fw-normal text-center mt-5 p-2">HOLLYWOOD CHEEK CONTOURING 6</div>
                 </a>
               </div><!-- item -->
             </div>
@@ -261,12 +282,43 @@
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
   <script defer src="assets/js/slick.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/venobox.min.js"></script>
   <script defer src="assets/js/script.js"></script>  
   <script type="text/javascript">
     var swiper = new Swiper(".myGallery", {
-      spaceBetween: 40,
+      spaceBetween: 60,
       slidesPerView: 4,
+      autoplay: {
+        delay: 5000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 60
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 60
+        },
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 40
+        }
+      }
+    });
 
+    new VenoBox({
+        selector: '.my-gallery-links',
+        numeration: true,
+        infinigall: true,
+        share: false,
+        download: false,
+        spinner: 'rotating-plane',
+        titlePosition: 'bottom'
     });
   </script>
 </body>
