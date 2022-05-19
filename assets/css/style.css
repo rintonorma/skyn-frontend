@@ -715,6 +715,12 @@ header.scrolled{
   background-position-y: 300px;
 }
 
+#our_deals{
+  background: #fff url('../img/bg-deals.png') no-repeat;
+  background-size: 100%;
+  background-position: top center;
+}
+
 #our_deals ul {
   list-style-image: url('../img/icons/icon-li.svg');
   padding-left: 1em;
@@ -722,6 +728,39 @@ header.scrolled{
 
 #our_deals ul li{
   padding-left: 1em;
+}
+#our_deals .swiper-slide{
+  height: auto;
+}
+#our_deals .swiper-slide .card{
+  height: 100%;
+}
+#our_deals .swiper-slide .card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#our_deals .swiper-button-prev, #our_deals .swiper-rtl .swiper-button-next{
+  left: 10%;
+  right: auto;
+  transform: translateY(50px);
+}
+#our_deals .swiper-button-next, #our_deals .swiper-rtl .swiper-button-prev {
+  right: 10%;
+  left: auto;
+  transform: translateY(50px);
+}
+#our_deals .swiper-button-next, #our_deals .swiper-button-prev {
+  padding: 1.5em;
+}
+#our_deals .swiper-button-next:after, #our_deals .swiper-button-prev:after{
+  font-size: 18px;
+}
+.bg-deals{
+  background: #FEEAFA url('../img/bg-card-deals.png') no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 .ui-best-deals{
   position: relative;
@@ -847,6 +886,12 @@ header.scrolled{
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#rf_treatment .img-title2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 #slimming_section{
@@ -1284,6 +1329,7 @@ footer{
   visibility: hidden;
   transition: all ease 1s;
   z-index: 9;
+  display: none;
 }
 
 .gototop.scrolled{
@@ -1296,15 +1342,56 @@ footer{
   color: #fff;
   padding: 5px;
   position: fixed;
-  right: 0;
-  top: 50%;
+  right: -14em;
+  bottom: 20%;
   display: block;
   z-index: 999;
+  width: 300px;
+  height: 80px;
+  transition: all ease .5s;
+}
+
+.referFriend a{
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .referFriend:hover{
   background: #131721;
   color: #DC7F9B;
+  right: 0em;
+}
+
+.contactWA{
+  background: #131721;
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  right: -14em;
+  bottom: 10%;
+  display: block;
+  z-index: 999;
+  width: 300px;
+  height: 80px;
+  transition: all ease .5s;
+}
+
+.contactWA a{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.contactWA img{
+  width: 71px;
+  padding: 0.5em;
+}
+
+.contactWA:hover{
+  background: #3D2645;
+  color: #DC7F9B;
+  right: 0em;
 }
 
 #searchCollapse{
