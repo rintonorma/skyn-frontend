@@ -844,7 +844,7 @@ header.scrolled{
 }
 
 #foxy_section ul li:before {
-  border-left: 1px solid #141721;
+  /*border-left: 1px solid #141721;*/
   border-bottom: 1px solid #141721;
   content: '';
   position: absolute;
@@ -854,7 +854,7 @@ header.scrolled{
 }
 
 .pricelist{
-  border-left: 1px solid #141721;
+  /*border-left: 1px solid #141721;*/
   border-bottom: 1px solid #141721;
   padding: 0.5em;
 }
@@ -948,7 +948,7 @@ header.scrolled{
 }
 
 #slimming_section ul li:before {
-  border-left: 1px solid #141721;
+  /*border-left: 1px solid #141721;*/
   border-bottom: 1px solid #141721;
   content: '';
   position: absolute;
@@ -1875,7 +1875,7 @@ footer{
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 20%;
+      height: auto;
     }
     .navbar-brand img{
       width: 50%;
@@ -2076,9 +2076,6 @@ footer{
         margin: 0 auto;
         margin-bottom: 2em;
     }
-    #drip_doctors{
-      padding: 2rem 0;
-    }
     #about_us .row{
       display: flex;
       flex-direction: column-reverse;
@@ -2270,6 +2267,11 @@ footer{
       width: 100%;
       bottom: 0;
       top: inherit;
+      right: 0;
+      height: 65px;
+    }
+    .referFriend img{
+      width: 50px;
     }
     .referFriend a{
       justify-content: center;
@@ -2347,6 +2349,58 @@ footer{
     }
     #before_section .container{
       overflow: hidden;
+    }
+    .contactWA{
+      right: -15em;
+      height: 60px;
+    }
+    .contactWA img{
+      width: 50px;
+    }
+    #our_deals .swiper-button-next, #our_deals .swiper-rtl .swiper-button-prev{
+      right: 0;
+    }
+    #our_deals .swiper-button-prev, #our_deals .swiper-rtl .swiper-button-next{
+      left:  0;
+    }
+    #slimming_section .w-25{
+      width: 100%!important;
+    }
+    #foxy_section .btn-link-black{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    #skyn_section .btn-link-black{
+      width: 100%;
+      text-align: center;
+    }
+    .dealsCarousel .swiper-slide{
+      width: 80%;
+    }
+    #rf_treatment_2 .img-title{
+      width: 30%;
+    }
+    #rf_treatment_2 .img-title2{
+      width: 50%;
+    }
+    #success_story .img-title{
+      width: 50%;
+      z-index: -1;
+    }
+    #meet_doctors{
+      background-size: 300%;
+    }
+    #meet_doctors h2{
+      text-align: center;
+    }
+    #meet_doctors .bg-pat-green{
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+    .packCarousel .swiper-slide{
+      width: 80%;
     }
 }
 
