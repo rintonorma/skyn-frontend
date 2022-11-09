@@ -38,6 +38,47 @@ $(document).ready(function () {
     ]
   });
 
+  $('.big_banner').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 1,
+    prevArrow: '<button class="slide-arrow prev-arrow"><img src="assets/img/icons/icon-arrow-left.svg" alt="" /></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><img src="assets/img/icons/icon-arrow-right.svg" alt="" /></button>',
+  });
+
+  $('.ticker-slider').slick({
+    dots: false,
+    autoplay: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 1,
+    prevArrow: '<button class="slide-arrow prev-arrow"><img src="assets/img/icons/icon-arrow-left-white.svg" alt="" /></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><img src="assets/img/icons/icon-arrow-right-white.svg" alt="" /></button>',
+  });
+
+  $('.product_slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 4,
+    prevArrow: $(".leftArrowTop"),
+    nextArrow: $(".rightArrowTop"),
+  });
+
+  $('.doctor_slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 3,
+    prevArrow: $(".leftArrowTop"),
+    nextArrow: $(".rightArrowTop"),
+  });
+
   $(document).scroll(function () {
     var $nav = $("header.fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
@@ -59,13 +100,13 @@ $(document).ready(function () {
     }
   });
 
-  $('#verification-code').pincodeInput({
-    inputs:6,
-    hideDigits:true,
-    keydown :function(e){},
-    change:function(input,value,inputnumber){},
-    complete :function(value, e, errorElement){}
-  });
+  // $('#verification-code').pincodeInput({
+  //   inputs:6,
+  //   hideDigits:true,
+  //   keydown :function(e){},
+  //   change:function(input,value,inputnumber){},
+  //   complete :function(value, e, errorElement){}
+  // });
 
   document.querySelector(".confirmPhone").addEventListener('click', function(){
     Swal.fire({
