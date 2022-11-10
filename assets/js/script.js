@@ -59,6 +59,40 @@ $(document).ready(function () {
     nextArrow: '<button class="slide-arrow next-arrow"><img src="assets/img/icons/icon-arrow-right-white.svg" alt="" /></button>',
   });
 
+  $('.treatment_slider').slick({
+    dots: true,
+    infinite: false,
+    arrows: false,
+    speed: 300,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
+  });
+
   $('.product_slider').slick({
     dots: true,
     infinite: true,
@@ -67,6 +101,32 @@ $(document).ready(function () {
     slidesToShow: 4,
     prevArrow: $(".leftArrowTop"),
     nextArrow: $(".rightArrowTop"),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true
+        }
+      }
+    ]
   });
 
   $('.doctor_slider').slick({
@@ -77,6 +137,66 @@ $(document).ready(function () {
     slidesToShow: 3,
     prevArrow: $(".leftArrowTop"),
     nextArrow: $(".rightArrowTop"),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
+  });
+
+  $('.testi_slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    speed: 300,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
   });
 
   $(document).scroll(function () {
