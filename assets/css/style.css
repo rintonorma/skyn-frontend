@@ -66,7 +66,7 @@ body {
   font-family: 'Metropolis', sans-serif;
   background: #fff;
   transition: all ease .5s;
-  color: #131721;
+  color: #000;
 }
 p {
   font-family: 'Metropolis', sans-serif;
@@ -172,6 +172,10 @@ header.scrolled{
   transition: all ease .5s;
   transform: translateY(-50px);
 }
+header.fixed-top:hover{
+  background: #fff;
+  transition: all ease .5s;
+}
 header.scrolled .header-ticker-widget{
   transform: translateY(-50px);
   transition: all ease .5s;
@@ -233,6 +237,7 @@ header.scrolled .header-ticker-widget{
 .navbar-dark .navbar-nav .nav-link:hover{
     color: #999;
 }
+
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
     color: #999;
@@ -479,7 +484,7 @@ header.scrolled .header-ticker-widget{
 .btn-link-black{
   display: inline-block;
   text-transform: uppercase;
-  border-bottom: 1px solid #000;
+  border: 1px solid #000;
   background: #000;
   padding: .75em 1em;
   text-decoration: none;
@@ -834,7 +839,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_deals{
-  background: #fff url('../img/bg-deals.png') no-repeat;
+  background: #fff;
   background-size: 100%;
   background-position: top center;
 }
@@ -843,7 +848,19 @@ header.scrolled .header-ticker-widget{
   list-style-image: url('../img/icons/icon-li.svg');
   padding-left: 1em;
 }
-
+#our_deals .slick-dots{
+  padding: 0;
+  bottom: -25px;
+}
+#our_deals .slick-track{
+  display: flex;
+}
+#our_deals .slick-slide{
+  height: inherit !important;
+}
+#our_deals .slick-slide .card{
+  height: 100%;
+}
 #our_deals ul li{
   padding-left: 1em;
 }
@@ -912,13 +929,8 @@ header.scrolled .header-ticker-widget{
 }
 
 #skyn_section{
-  background: #FFF9FE url('../img/bg-skyn.png') no-repeat;
-  background-size: 100%;
-  background-position: top center;
-  background-position-y: -50px;
-  background-blend-mode: multiply;
+  background: #f5f5f5;
   position: relative;
-  padding-top: 0;
 }
 
 #skyn_section .img-title{
@@ -928,9 +940,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #foxy_section{
-  background: #FFFFFF url('../img/bg-foxy.png') no-repeat;
-  background-size: 100%;
-  background-position: bottom center;
+  background: #FFFFFF;
 }
 
 #foxy_section .img-title{
@@ -995,9 +1005,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #rf_treatment{
-  background: #fff url('../img/bg-rf.png') no-repeat;
-  background-size: 100%;
-  background-position: bottom center;
+  background: #fff;
 }
 
 #rf_treatment .img-title{
@@ -1031,10 +1039,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #slimming_section{
-  background: #FFFCFE url('../img/bg-slimming.png') no-repeat;
-  /*background-size: 100%;*/
-  background-position: top left;
-  background-position-x: 100px;
+  background: #f5f5f5;
 }
 
 #slimming_section .img-title{

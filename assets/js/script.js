@@ -199,6 +199,42 @@ $(document).ready(function () {
     ]
   });
 
+  $('.dealsCarousel').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 3,
+    prevArrow: $(".leftArrowTop"),
+    nextArrow: $(".rightArrowTop"),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true
+        }
+      }
+    ]
+  });
+
   $(document).scroll(function () {
     var $nav = $("header.fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
