@@ -163,6 +163,9 @@ section{
 .w-10{
   width: 10%!important;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 header{
   width: 100vw;
 }
@@ -584,7 +587,7 @@ header.scrolled .header-ticker-widget{
   background-size: 100%;
   background-position: top center;
 }
-.leftArrowTop, .rightArrowTop{
+.leftArrow, .rightArrow{
   background: transparent;
   border: 1px solid #000;
   display: flex;
@@ -592,12 +595,12 @@ header.scrolled .header-ticker-widget{
   justify-content: center;
   padding: .5rem 1rem;
 }
-.leftArrowTop:hover, .rightArrowTop:hover{
+.leftArrow:hover, .rightArrow:hover{
   background: #000;
   border: 1px solid #000;
   color: #fff;
 }
-.leftArrowTop:hover .icon-arrow-left, .rightArrowTop:hover .icon-arrow-right{
+.leftArrow:hover .icon-arrow-left, .rightArrow:hover .icon-arrow-right{
   background-color: #fff;
 }
 .icon-arrow-left{
@@ -642,7 +645,7 @@ header.scrolled .header-ticker-widget{
 .treatment-title{
   font-size: 24px;
   font-weight: normal;
-  padding: .5rem 2rem;
+  padding: 1rem 0rem;
   text-align: center;
   /*border-left: 1px solid #141721;*/
   border-bottom: .5px solid #141721;
@@ -1008,6 +1011,10 @@ header.scrolled .header-ticker-widget{
   background: #fff;
 }
 
+#rf_treatment .slick-list{
+  overflow: visible;
+}
+
 #rf_treatment .img-title{
   position: absolute;
   top: 0;
@@ -1021,9 +1028,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #rf_treatment_2{
-  background: #fff url('../img/bg-rf-2.png') no-repeat;
-  background-size: 100%;
-  background-position: bottom center;
+  background: #f5f5f5;
 }
 
 #rf_treatment_2 .img-title{
@@ -1090,9 +1095,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #new_package{
-  background: #fff url('../img/bg-new-package.png') no-repeat;
-  background-size: 100%;
-  background-position: center center;
+  background: #fff;
   position: relative;
 }
 
@@ -1150,6 +1153,18 @@ header.scrolled .header-ticker-widget{
 }
 #new_package .swiper-button-next:after, #new_package .swiper-button-prev:after{
   font-size: 18px;
+}
+#new_package .slick-dots{
+  bottom: -25px;
+}
+#new_package .slick-track{
+  display: flex;
+}
+#new_package .slick-slide{
+  height: inherit!important;
+}
+#new_package .slick-slide .card{
+  height: 100%;
 }
 .bg-package{
   background: #DDFAF7 url('../img/bg-card-package.png') no-repeat;
@@ -1858,9 +1873,7 @@ footer{
 }
 
 #success_story{
-  background: #fff url('../img/bg-new-package.png') no-repeat;
-  background-size: 100%;
-  background-position: top center;
+  background: #fff;
 }
 
 #success_story:before{
@@ -1916,7 +1929,6 @@ footer{
 .myStory .card-body{
     background: #fff;
     z-index: 1;
-    margin-top: -1.5rem;
 }
 .myStory .card-body.bg-card-family{
   background: #fff url('../img/bg-card-family.png') no-repeat;
@@ -1941,7 +1953,7 @@ footer{
 }
 
 #meet_doctors {
-    background: #fff url(../img/bg-rf-2.png) no-repeat;
+    background: #fff;
     background-size: 100%;
     background-position: bottom center;
     background-position-y: 300px;

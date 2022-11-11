@@ -185,8 +185,8 @@
         <div class="d-flex align-items-center justify-content-center justify-content-lg-between">
           <h2 class="mb-3">All Products</h2>
           <div class="d-none d-lg-flex">
-            <button class="leftArrowTop"><div class="icon-arrow-left"></div></button>
-            <button class="rightArrowTop"><div class="icon-arrow-right"></div></button>
+            <button class="leftArrow leftArrowProduct"><div class="icon-arrow-left"></div></button>
+            <button class="rightArrow rightArrowProduct"><div class="icon-arrow-right"></div></button>
           </div>
         </div>
       </div>
@@ -194,7 +194,7 @@
         <div class="col-12">
           <div class="product_slider">
             
-              <div class="card px-2">
+              <div class="card px-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#productModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/statements/statements-3.png" alt="statement" class="object-cover" />
                 </div>
@@ -205,12 +205,12 @@
                   <div class="d-flex flex-column align-items-start gap-3">
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <h5>Rp 100.000</h5>
-                    <a href="#" title="" class="btn-link-black text-center w-100" data-bs-toggle="modal" data-bs-target="#productModal">Explore More</a>
+                    <a href="#" title="" class="btn-link-black text-center w-100">Explore More</a>
                   </div>
                 </div>
               </div>
             
-              <div class="card px-2">
+              <div class="card px-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#productModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/statements/statements-3.png" alt="statement" class="object-cover" />
                 </div>
@@ -221,12 +221,12 @@
                   <div class="d-flex flex-column align-items-start gap-3">
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <h5>Rp 100.000</h5>
-                    <a href="#" title="" class="btn-link-black text-center w-100" data-bs-toggle="modal" data-bs-target="#productModal">Explore More</a>
+                    <a href="#" title="" class="btn-link-black text-center w-100">Explore More</a>
                   </div>
                 </div>
               </div>
             
-              <div class="card px-2">
+              <div class="card px-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#productModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/statements/statements-3.png" alt="statement" class="object-cover" />
                 </div>
@@ -237,12 +237,12 @@
                   <div class="d-flex flex-column align-items-start gap-3">
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <h5>Rp 100.000</h5>
-                    <a href="#" title="" class="btn-link-black text-center w-100" data-bs-toggle="modal" data-bs-target="#productModal">Explore More</a>
+                    <a href="#" title="" class="btn-link-black text-center w-100">Explore More</a>
                   </div>
                 </div>
               </div>
             
-              <div class="card px-2">
+              <div class="card px-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#productModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/statements/statements-3.png" alt="statement" class="object-cover" />
                 </div>
@@ -253,12 +253,12 @@
                   <div class="d-flex flex-column align-items-start gap-3">
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <h5>Rp 100.000</h5>
-                    <a href="#" title="" class="btn-link-black text-center w-100" data-bs-toggle="modal" data-bs-target="#productModal">Explore More</a>
+                    <a href="#" title="" class="btn-link-black text-center w-100">Explore More</a>
                   </div>
                 </div>
               </div>
 
-              <div class="card px-2">
+              <div class="card px-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#productModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/statements/statements-3.png" alt="statement" class="object-cover" />
                 </div>
@@ -269,7 +269,7 @@
                   <div class="d-flex flex-column align-items-start gap-3">
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <h5>Rp 100.000</h5>
-                    <a href="#" title="" class="btn-link-black text-center w-100" data-bs-toggle="modal" data-bs-target="#productModal">Explore More</a>
+                    <a href="#" title="" class="btn-link-black text-center w-100">Explore More</a>
                   </div>
                 </div>
               </div>
@@ -336,7 +336,6 @@
                 </div>
                 <div class="col-8 col-lg-9 justify-content-center d-flex flex-column">
                   <div class="subtitle text-black">Mayangsari Augustine</div>
-                  <small>Singer & Celebrity</small>
                 </div>
               </div>
             </div><!-- items -->
@@ -352,7 +351,6 @@
                 </div>
                 <div class="col-8 col-lg-9 justify-content-center d-flex flex-column">
                   <div class="subtitle text-black">Jesselyn Sudibjo</div>
-                  <small>Youtubers</small>
                 </div>
               </div>
             </div><!-- items -->
@@ -368,7 +366,6 @@
                 </div>
                 <div class="col-8 col-lg-9 justify-content-center d-flex flex-column">
                   <div class="subtitle text-black">El Vitra</div>
-                  <small>Selebgram</small>
                 </div>
               </div>
             </div><!-- items -->
@@ -384,7 +381,6 @@
                 </div>
                 <div class="col-8 col-lg-9 justify-content-center d-flex flex-column">
                   <div class="subtitle text-black">Mayangsari Augustine</div>
-                  <small>Singer & Celebrity</small>
                 </div>
               </div>
             </div><!-- items -->
@@ -421,8 +417,8 @@
         <div class="d-flex align-items-center justify-content-center justify-content-lg-between">
           <h2 class="mb-3">Meet Drip Doctors</h2>
           <div class="d-none d-lg-flex">
-            <button class="leftArrowTop"><div class="icon-arrow-left"></div></button>
-            <button class="rightArrowTop"><div class="icon-arrow-right"></div></button>
+            <button class="leftArrow leftArrowTop"><div class="icon-arrow-left"></div></button>
+            <button class="rightArrow rightArrowTop"><div class="icon-arrow-right"></div></button>
           </div>
         </div>
       </div>

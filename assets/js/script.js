@@ -99,8 +99,8 @@ $(document).ready(function () {
     arrows: true,
     speed: 300,
     slidesToShow: 4,
-    prevArrow: $(".leftArrowTop"),
-    nextArrow: $(".rightArrowTop"),
+    prevArrow: $(".leftArrowProduct"),
+    nextArrow: $(".rightArrowProduct"),
     responsive: [
       {
         breakpoint: 1024,
@@ -205,6 +205,42 @@ $(document).ready(function () {
     arrows: true,
     speed: 300,
     slidesToShow: 3,
+    prevArrow: $(".leftArrowDeals"),
+    nextArrow: $(".rightArrowDeals"),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true
+        }
+      }
+    ]
+  });
+
+  $('.myStory').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 4,
     prevArrow: $(".leftArrowTop"),
     nextArrow: $(".rightArrowTop"),
     responsive: [
