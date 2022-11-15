@@ -35,8 +35,8 @@
 
 @font-face { 
   font-family: "Mont";
-  src: url("https://github.com/rintonorma/skyn-frontend/blob/25aacd63f17e7e5e45ede313b0e36d97153b3f80/assets/fonts/mont/Mont-HeavyDEMO.otf?raw=true") format("embedded-opentype"); 
-  font-weight: normal; 
+  src: url("https://github.com/rintonorma/skyn-frontend/blob/master/assets/fonts/mont/Mont-Bold.otf?raw=true") format("otf"); 
+  font-weight: 800; 
   font-style: normal;
 }
 
