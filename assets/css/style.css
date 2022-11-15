@@ -35,7 +35,7 @@
 
 @font-face { 
   font-family: "Mont";
-  src: url("../fonts/mont/Mont-HeavyDEMO.otf") format("embedded-opentype"); 
+  src: url("https://github.com/rintonorma/skyn-frontend/blob/25aacd63f17e7e5e45ede313b0e36d97153b3f80/assets/fonts/mont/Mont-HeavyDEMO.otf?raw=true") format("embedded-opentype"); 
   font-weight: normal; 
   font-style: normal;
 }
@@ -124,6 +124,14 @@ section{
   position: relative;
 }
 
+.font-mont{
+  font-family: "Mont";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+}
+
 .dropdown-item.active, .dropdown-item:active {
     color: #141721;
     text-decoration: none;
@@ -162,6 +170,9 @@ section{
 }
 .w-10{
   width: 10%!important;
+}
+.fw-semibold{
+  font-weight: 600;
 }
 .cursor-pointer{
   cursor: pointer;
@@ -523,12 +534,12 @@ header.scrolled .header-ticker-widget{
   padding: .75em 1em;
   text-decoration: none;
   font-weight: 600;
-  color: #6C757D;
+  color: #000;
   text-align: center;
 }
 
 .btn-link-light:hover{
-  background: #131721;
+  background: #000;
   color: #fff;
 }
 
@@ -1186,25 +1197,13 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_menu{
-  background: #CBE8FF url('../img/bg-our-menu.png') no-repeat;
-  background-size: 100%;
-  background-position: center center;
+  background: rgb(28,111,176);
+  background: -moz-linear-gradient(90deg, rgba(28,111,176,1) 0%, rgba(111,180,240,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(28,111,176,1) 0%, rgba(111,180,240,1) 100%);
+  background: linear-gradient(90deg, rgba(28,111,176,1) 0%, rgba(111,180,240,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c6fb0",endColorstr="#6fb4f0",GradientType=1);
   position: relative;
-}
-
-#our_menu:before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgb(255,255,255);
-  background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  color: #fff;
 }
 
 #our_menu .container{
@@ -1236,7 +1235,7 @@ header.scrolled .header-ticker-widget{
   text-transform: uppercase;
   font-size: 32px;
   letter-spacing: .25rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #our_menu h4{
@@ -1265,18 +1264,24 @@ header.scrolled .header-ticker-widget{
   font-weight: bold;
   font-family: 'Mont';
   text-transform: uppercase;
-  color: #ADB5BD;
+  color: rgba(255, 255, 255, 0.5);
   border: none;
 }
 #our_menu .nav-tabs .nav-item.show .nav-link, #our_menu .nav-tabs .nav-link.active{
   font-size: 20px;
   font-weight: bold;
   font-family: 'Mont';
-  color: #131721;
+  color: #fff;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #0F80AA;
+  border-bottom: 2px solid #fff;
+}
+.circle-bg-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 #our_package{
@@ -1299,6 +1304,10 @@ header.scrolled .header-ticker-widget{
   background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+#our_package .slick-dots{
+  bottom: -25px;
 }
 
 #our_package .container{
@@ -1873,7 +1882,7 @@ footer{
 }
 
 #success_story{
-  background: #fff;
+  background: #f5f5f5;
 }
 
 #success_story:before{
@@ -1903,8 +1912,12 @@ footer{
 }
 .myStory{
   overflow: visible;
-  margin: 4em 1em;
   display: block;
+}
+
+.myStory .slick-dots{
+  bottom: -25px;
+  position: initial;
 }
 
 .myStory .swiper-button-next, .myStory .swiper-rtl .swiper-button-prev {
@@ -1926,8 +1939,13 @@ footer{
     margin-left: 1.5em;
     margin-top: -1.5em;
 }
+.myStory .card{
+  background: transparent;
+}
 .myStory .card-body{
-    background: #fff;
+    background: transparent;
+    padding-left: 0;
+    padding-right: 0;
     z-index: 1;
 }
 .myStory .card-body.bg-card-family{

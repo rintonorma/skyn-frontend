@@ -241,8 +241,8 @@ $(document).ready(function () {
     arrows: true,
     speed: 300,
     slidesToShow: 4,
-    prevArrow: $(".leftArrowTop"),
-    nextArrow: $(".rightArrowTop"),
+    prevArrow: $(".leftArrowStory"),
+    nextArrow: $(".rightArrowStory"),
     responsive: [
       {
         breakpoint: 1024,
