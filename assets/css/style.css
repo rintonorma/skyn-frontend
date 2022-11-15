@@ -26,17 +26,19 @@
   font-style: normal;
 }
 
-@font-face { 
-  font-family: "Mont";
-  src: url("../fonts/mont/Mont-ExtraLightDEMO.otf") format("embedded-opentype"); 
-  font-weight: 200; 
+@font-face {
+  font-family: 'Mont',sans-serif;
+  src: url('../fonts/mont/Mont-Light.woff2') format('woff2'),
+      url('../fonts/mont/Mont-Light.woff') format('woff');
+  font-weight: 200;
   font-style: normal;
 }
 
-@font-face { 
-  font-family: "Mont";
-  src: url("https://github.com/rintonorma/skyn-frontend/blob/master/assets/fonts/mont/Mont-Bold.otf?raw=true") format("otf"); 
-  font-weight: 800; 
+@font-face {
+  font-family: 'Mont',sans-serif;
+  src: url('../fonts/mont/Mont-Black.woff2') format('woff2'),
+      url('../fonts/mont/Mont-Black.woff') format('woff');
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -125,8 +127,8 @@ section{
 }
 
 .font-mont{
-  font-family: "Mont";
-  font-weight: bold;
+  font-family: 'Mont',sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 32px;
   text-align: center;
@@ -1212,7 +1214,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_menu .subtitle{
-  font-family: "Mont";
+  font-family: 'Mont',sans-serif;
   font-weight: 200;
   color: #131721;
   font-size: 40px;
@@ -1221,8 +1223,8 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_menu h2{
-  font-family: "Mont";
-  font-weight: bold;
+  font-family: 'Mont',sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 58px;
   letter-spacing: .25rem;
@@ -1230,8 +1232,8 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_menu h3{
-  font-family: "Mont";
-  font-weight: bold;
+  font-family: 'Mont',sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 32px;
   letter-spacing: .25rem;
@@ -1239,7 +1241,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_menu h4{
-  font-family: "Mont";
+  font-family: 'Mont',sans-serif;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 24px;
@@ -1262,7 +1264,7 @@ header.scrolled .header-ticker-widget{
 #our_menu .nav-tabs .nav-link{
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Mont';
+  font-family: 'Mont',sans-serif;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
   border: none;
@@ -1270,7 +1272,7 @@ header.scrolled .header-ticker-widget{
 #our_menu .nav-tabs .nav-item.show .nav-link, #our_menu .nav-tabs .nav-link.active{
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Mont';
+  font-family: 'Mont',sans-serif;
   color: #fff;
   text-transform: uppercase;
   background-color: transparent;
@@ -1316,7 +1318,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_package h2{
-  font-family: "Mont";
+  font-family: 'Mont',sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 58px;
@@ -1325,7 +1327,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_package h3{
-  font-family: "Mont";
+  font-family: 'Mont',sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 32px;
@@ -1334,7 +1336,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_package h4{
-  font-family: "Mont";
+  font-family: 'Mont',sans-serif;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 24px;
@@ -1398,13 +1400,13 @@ header.scrolled .header-ticker-widget{
 }
 
 #drip_doctors h2{
-  font-family: "Mont";
+  font-family: 'Mont',sans-serif;
   font-weight: bold;
   font-size: 58px;
 }
 
 .modalMenu h3{
-  font-family: "Mont";
+  font-family: 'Mont',sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 32px;
@@ -1412,7 +1414,7 @@ header.scrolled .header-ticker-widget{
 }
 
 .modalMenu h4{
-  font-family: "Mont";
+  font-family: 'Mont',sans-serif;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 24px;
@@ -1453,7 +1455,6 @@ header.scrolled .header-ticker-widget{
   -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,1);
   -moz-box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,1);
   box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,1);
-  Copy Text
 }
 
 .memberContent{
