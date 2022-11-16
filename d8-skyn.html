@@ -155,7 +155,7 @@
         <div class="col-12 position-relative">
           <div class="myStory">
             <div class="p-2">
-              <div class="card">
+              <div class="card cursor-pointer" data-bs-toggle="modal" data-bs-target="#beforeAfterModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/img-gallery-2.png" alt="" class="object-cover" />
                 </div>
@@ -169,7 +169,7 @@
               </div>
             </div><!-- item -->
             <div class="p-2">
-              <div class="card">
+              <div class="card cursor-pointer" data-bs-toggle="modal" data-bs-target="#beforeAfterModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/img-gallery-2.png" alt="" class="object-cover" />
                 </div>
@@ -183,7 +183,7 @@
               </div>
             </div><!-- item -->
             <div class="p-2">
-              <div class="card">
+              <div class="card cursor-pointer" data-bs-toggle="modal" data-bs-target="#beforeAfterModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/img-gallery-2.png" alt="" class="object-cover" />
                 </div>
@@ -197,7 +197,7 @@
               </div>
             </div><!-- item -->
             <div class="p-2">
-              <div class="card">
+              <div class="card cursor-pointer" data-bs-toggle="modal" data-bs-target="#beforeAfterModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/img-gallery-2.png" alt="" class="object-cover" />
                 </div>
@@ -211,7 +211,7 @@
               </div>
             </div><!-- item -->
             <div class="p-2">
-              <div class="card">
+              <div class="card cursor-pointer" data-bs-toggle="modal" data-bs-target="#beforeAfterModal">
                 <div class="ratio ratio-1x1">
                   <img src="assets/img/img-gallery-2.png" alt="" class="object-cover" />
                 </div>
@@ -530,6 +530,30 @@
         <p>and get more information</p>
       </div>
     </a>
+  </div>
+
+  <!-- Modal -->
+  <div class="modalBeforeAfter modal fade" id="beforeAfterModal" tabindex="-1" aria-labelledby="beforeAfterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="beforeAfterModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 mb-3">
+            <img src="assets/img/img-gallery-2.png" alt="" class="object-cover" />
+          </div>
+          <h3 class="mb-3">Pretty Asmara (39)</h3>
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="mb-3">Start: 89kg</h4>
+            <h4 class="mb-3">Lost: 45kg</h4>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit libero, pulvinar elementum elit eget, ornare convallis magna. Praesent in maximus purus. Ut eleifend sapien sit amet auctor iaculis.</p>
+          <p> Suspendisse potenti. Praesent turpis arcu, euismod vitae venenatis eu, convallis non nulla. Nullam efficitur maximus arcu non scelerisque. Curabitur id turpis sollicitudin, lobortis odio in, euismod augue. Pellentesque cursus vulputate dui in convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis porta eros. Aliquam placerat lorem enim, in bibendum enim viverra id. Cras egestas ut purus vitae congue.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="assets/js/jquery-3.5.1.min.js"></script>

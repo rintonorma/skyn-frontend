@@ -1,33 +1,37 @@
 @font-face { 
   font-family: "Metropolis";
-  src: url("../fonts/metropolis/Metropolis-Thin.otf") format("embedded-opentype"); 
+  src: url('../fonts/metropolis/Metropolis-Thin.woff2') format('woff2'),
+      url('../fonts/metropolis/Metropolis-Thin.woff') format('woff');
   font-weight: 100; 
   font-style: normal; 
 }
 
 @font-face { 
   font-family: "Metropolis";
-  src: url("../fonts/metropolis/Metropolis-Light.otf") format("embedded-opentype"); 
+  src: url('../fonts/metropolis/Metropolis-Light.woff2') format('woff2'),
+      url('../fonts/metropolis/Metropolis-Light.woff') format('woff');
   font-weight: 300; 
   font-style: normal; 
 }
 
 @font-face { 
   font-family: "Metropolis";
-  src: url("../fonts/metropolis/Metropolis-Regular.otf") format("embedded-opentype"); 
+  src: url('../fonts/metropolis/Metropolis-Regular.woff2') format('woff2'),
+      url('../fonts/metropolis/Metropolis-Regular.woff') format('woff');
   font-weight: normal; 
   font-style: normal;
 }
 
 @font-face { 
   font-family: "Metropolis";
-  src: url("../fonts/metropolis/Metropolis-SemiBold.otf") format("embedded-opentype"); 
+  src: url('../fonts/metropolis/Metropolis-SemiBold.woff2') format('woff2'),
+      url('../fonts/metropolis/Metropolis-SemiBold.woff') format('woff');
   font-weight: 600; 
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Mont',sans-serif;
+  font-family: 'Mont';
   src: url('../fonts/mont/Mont-Light.woff2') format('woff2'),
       url('../fonts/mont/Mont-Light.woff') format('woff');
   font-weight: 200;
@@ -35,10 +39,10 @@
 }
 
 @font-face {
-  font-family: 'Mont',sans-serif;
+  font-family: 'Mont';
   src: url('../fonts/mont/Mont-Black.woff2') format('woff2'),
       url('../fonts/mont/Mont-Black.woff') format('woff');
-  font-weight: 800;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -128,7 +132,7 @@ section{
 
 .font-mont{
   font-family: 'Mont',sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 32px;
   text-align: center;
@@ -638,6 +642,14 @@ header.scrolled .header-ticker-widget{
 }
 .doctor_slider .slick-dots{
   bottom: -25px;
+}
+#doctor_slider h2{
+  font-family: 'Mont',sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 58px;
+  /* letter-spacing: .25rem; */
+  text-align: center;
 }
 .doctor_slider .card{
   background-color: transparent;
@@ -1224,19 +1236,19 @@ header.scrolled .header-ticker-widget{
 
 #our_menu h2{
   font-family: 'Mont',sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 58px;
-  letter-spacing: .25rem;
+  /* letter-spacing: .25rem; */
   text-align: center;
 }
 
 #our_menu h3{
   font-family: 'Mont',sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 32px;
-  letter-spacing: .25rem;
+  /* letter-spacing: .25rem; */
   /* text-align: center; */
 }
 
@@ -1279,33 +1291,21 @@ header.scrolled .header-ticker-widget{
   border: none;
   border-bottom: 2px solid #fff;
 }
+.icon-circle{
+  width: 100%;
+}
 .circle-bg-img{
-  width: 200px;
-  height: 200px;
+  /* width: 200px;
+  height: 200px; */
   border-radius: 50%;
   overflow: hidden;
 }
 
 #our_package{
-  background: #CBE8FF url('../img/bg-our-menu.png') no-repeat;
+  background: #fff;
   background-size: 100%;
   background-position: center center;
   position: relative;
-}
-
-#our_package:before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgb(255,255,255);
-  background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
 }
 
 #our_package .slick-dots{
@@ -1319,16 +1319,16 @@ header.scrolled .header-ticker-widget{
 
 #our_package h2{
   font-family: 'Mont',sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 58px;
-  letter-spacing: .25rem;
+  /* letter-spacing: .25rem; */
   text-align: center;
 }
 
 #our_package h3{
   font-family: 'Mont',sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 32px;
   letter-spacing: .25rem;
@@ -1401,13 +1401,13 @@ header.scrolled .header-ticker-widget{
 
 #drip_doctors h2{
   font-family: 'Mont',sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 58px;
 }
 
 .modalMenu h3{
   font-family: 'Mont',sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 32px;
   letter-spacing: .25rem;
@@ -2190,7 +2190,11 @@ footer{
       width: 50%;
     }
     #our_menu .icon-circle{
-      width: 80%;
+      flex: 1;
+    }
+    #our_menu .circle-bg-img{
+      height: auto;
+      flex: 1;
     }
     #our_menu h2{
       font-size: 24px;
@@ -2206,11 +2210,11 @@ footer{
       overflow-x: auto;
     }
     #our_menu .nav-tabs .nav-link{
-      font-size: 12px;
+      font-size: 16px;
       white-space: nowrap;
     }
     #our_menu .nav-tabs .nav-item.show .nav-link, #our_menu .nav-tabs .nav-link.active{
-      font-size: 12px;
+      font-size: 16px;
     }
     #our_menu .py-5{
       padding-top: 1rem!important;
@@ -2234,6 +2238,9 @@ footer{
         width: 60%;
         margin: 0 auto;
         margin-bottom: 2em;
+    }
+    #doctor_slider h2{
+      font-size: 24px;
     }
     #about_us .row{
       display: flex;
