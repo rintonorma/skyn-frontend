@@ -129,6 +129,42 @@ $(document).ready(function () {
     ]
   });
 
+  $('.product_slider2').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 4,
+    prevArrow: $(".leftArrowProduct2"),
+    nextArrow: $(".rightArrowProduct2"),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true
+        }
+      }
+    ]
+  });
+
   $('.doctor_slider').slick({
     dots: true,
     infinite: true,
@@ -243,6 +279,42 @@ $(document).ready(function () {
     slidesToShow: 4,
     prevArrow: $(".leftArrowStory"),
     nextArrow: $(".rightArrowStory"),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true
+        }
+      }
+    ]
+  });
+
+  $('.myGallery').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 4,
+    prevArrow: $(".leftArrowGallery"),
+    nextArrow: $(".rightArrowGallery"),
     responsive: [
       {
         breakpoint: 1024,

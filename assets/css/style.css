@@ -1,5 +1,5 @@
 @font-face { 
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   src: url('../fonts/metropolis/Metropolis-Thin.woff2') format('woff2'),
       url('../fonts/metropolis/Metropolis-Thin.woff') format('woff');
   font-weight: 100; 
@@ -7,7 +7,7 @@
 }
 
 @font-face { 
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   src: url('../fonts/metropolis/Metropolis-Light.woff2') format('woff2'),
       url('../fonts/metropolis/Metropolis-Light.woff') format('woff');
   font-weight: 300; 
@@ -15,7 +15,7 @@
 }
 
 @font-face { 
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   src: url('../fonts/metropolis/Metropolis-Regular.woff2') format('woff2'),
       url('../fonts/metropolis/Metropolis-Regular.woff') format('woff');
   font-weight: normal; 
@@ -23,7 +23,7 @@
 }
 
 @font-face { 
-  font-family: "Metropolis";
+  font-family: 'Metropolis';
   src: url('../fonts/metropolis/Metropolis-SemiBold.woff2') format('woff2'),
       url('../fonts/metropolis/Metropolis-SemiBold.woff') format('woff');
   font-weight: 600; 
@@ -70,6 +70,7 @@ html, body {
 }
 body {
   font-family: 'Metropolis', sans-serif;
+  font-weight: normal;
   background: #fff;
   transition: all ease .5s;
   color: #000;
@@ -139,9 +140,9 @@ section{
 }
 
 .dropdown-item.active, .dropdown-item:active {
-    color: #141721;
+    color: #fff;
     text-decoration: none;
-    background-color: #ffe6ed;
+    background-color: #000;
 }
 
 .form-control{
@@ -520,7 +521,7 @@ header.scrolled .header-ticker-widget{
 
 .btn-link-dark{
   display: inline-block;
-  background: #131721;
+  background: #000;
   text-transform: uppercase;
   padding: .75em 1em;
   text-decoration: none;
@@ -556,14 +557,14 @@ header.scrolled .header-ticker-widget{
   padding: 1em 4em;
   text-decoration: none;
   font-weight: 600;
-  color: #131721;
-  border: 1px solid #131721;
+  color: #000;
+  border: 1px solid #000;
 }
 
 .btn-link-outline-dark:hover{
-  background: #131721;
+  background: #000;
   color: #fff;
-  border: 1px solid #131721;
+  border: 1px solid #000;
 }
 .btn-link-outline-light{
   display: inline-block;
@@ -591,7 +592,7 @@ header.scrolled .header-ticker-widget{
   color: #231F20!important;
 }
 .swal2-html-container{
-  color: #131721!important;
+  color: #000!important;
 }
 .swal2-styled.swal2-confirm{
   border-radius: 0!important;
@@ -603,6 +604,9 @@ header.scrolled .header-ticker-widget{
   background: #fff;
   background-size: 100%;
   background-position: top center;
+}
+#our_treatment .slick-dots{
+  bottom: -25px;
 }
 .leftArrow, .rightArrow{
   background: transparent;
@@ -634,7 +638,7 @@ header.scrolled .header-ticker-widget{
   -webkit-mask: url(../img/icons/icon-arrow-right.svg) no-repeat center / contain;
   mask: url(../img/icons/icon-arrow-right.svg) no-repeat center / contain;
 }
-.product_slider .slick-dots{
+.product_slider .slick-dots, .product_slider2 .slick-dots{
   bottom: -25px;
 }
 #doctor_slider{
@@ -642,14 +646,6 @@ header.scrolled .header-ticker-widget{
 }
 .doctor_slider .slick-dots{
   bottom: -25px;
-}
-#doctor_slider h2{
-  font-family: 'Mont',sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 58px;
-  /* letter-spacing: .25rem; */
-  text-align: center;
 }
 .doctor_slider .card{
   background-color: transparent;
@@ -1100,9 +1096,11 @@ header.scrolled .header-ticker-widget{
 }
 
 #promotions_section{
-  background: #fff url('../img/bg-promo.png') no-repeat;
-  background-size: 100%;
-  background-position: top center;
+  background: rgb(28,111,176);
+  background: -moz-linear-gradient(180deg, rgba(28,111,176,1) 0%, rgba(28,111,176,1) 20%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(28,111,176,1) 0%, rgba(28,111,176,1) 20%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(180deg, rgba(28,111,176,1) 0%, rgba(28,111,176,1) 20%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c6fb0",endColorstr="#ffffff",GradientType=1);
   padding: 10em 0;
 }
 
@@ -1112,7 +1110,7 @@ header.scrolled .header-ticker-widget{
 }
 
 .promo_list .card{
-  border-radius: 10px;
+  border-radius: 0px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15);
   -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15);
   box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.15);
@@ -1318,12 +1316,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #our_package h2{
-  font-family: 'Mont',sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 58px;
-  /* letter-spacing: .25rem; */
-  text-align: center;
+  
 }
 
 #our_package h3{
@@ -1421,7 +1414,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #membership_section{
-  background: #fff url('../img/bg-membership.png') no-repeat;
+  background: #fff;
   background-size: 100%;
   background-position: top center;
   background-position-y: -20px;
@@ -1479,7 +1472,7 @@ header.scrolled .header-ticker-widget{
 .member-card{
   display: block;
   position: relative;
-  border-radius: 5px!important;
+  border-radius: 0px!important;
   padding: 10px;
   overflow: hidden;
 }
@@ -1585,7 +1578,7 @@ header.scrolled .header-ticker-widget{
   background-size: cover;
   color: #fff;
   padding: 5rem 0;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .myVoucher .swiper-slide{
@@ -1612,7 +1605,7 @@ header.scrolled .header-ticker-widget{
 }
 
 #my_account{
-  background: #fff url('../img/bg-membership.png') no-repeat;
+  background: #fff;
   background-size: 100%;
   background-position: top center;
   padding: 10em 0;
@@ -1678,14 +1671,11 @@ header.scrolled .header-ticker-widget{
 }
 
 #before_section{
-  background: #fff url('../img/bg-before.png') no-repeat;
+  background: #fff;
   background-size: 100%;
   background-position: top center;
 }
 
-#before_section .container{
-  overflow: auto;
-}
 
 #footer{
   background: #000;
@@ -1861,9 +1851,9 @@ footer{
 }
 
 .myGallery{
-  overflow: visible;
-  margin: 4em 1em;
-  display: block;
+}
+.myGallery .slick-dots{
+  bottom: -25px;
 }
 
 .swiper-button-next, .swiper-button-prev{
@@ -1978,6 +1968,10 @@ footer{
     background-position-y: 300px;
 }
 
+#page_section{
+  padding: 10rem 0;
+}
+
 @media (max-width: 767px){
     h1{
       font-size: 32px;
@@ -1992,7 +1986,7 @@ footer{
       font-size: 16px!important;
     }
     p{
-      font-size: 12px;
+      font-size: 14px;
     }
     section{
       padding: 2em 0;
@@ -2520,9 +2514,6 @@ footer{
     #before_section h3{
       font-size: 24px;
     }
-    #before_section .container{
-      overflow: hidden;
-    }
     .contactWA{
       right: -15em;
       height: 60px;
@@ -2574,6 +2565,9 @@ footer{
     }
     .packCarousel .swiper-slide{
       width: 80%;
+    }
+    .footer-logo img{
+      width: 80px;
     }
 }
 
